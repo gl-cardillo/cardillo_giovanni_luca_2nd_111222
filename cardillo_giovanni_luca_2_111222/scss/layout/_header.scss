@@ -1,0 +1,23 @@
+header {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 0px 3px 4px 0px #cecece;
+  position: relative;
+
+  img {
+    width: 60%;
+  }
+}
+
+.header-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: none;
+
+  i {
+    position: absolute;
+    left: 5%;
+  }
+}

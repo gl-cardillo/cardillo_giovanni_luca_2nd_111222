@@ -1,0 +1,286 @@
+.location {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+  background-color: #eaeaea;
+  padding: 20px;
+}
+.location p {
+  font-size: 18px;
+}
+
+.explore-section {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #f6f6f6;
+}
+.explore-section h2 {
+  font-size: 28px;
+}
+.explore-section p {
+  font-size: 20px;
+  text-align: center;
+  color: #5c5b5b;
+}
+
+.htw-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 20px;
+}
+.htw-section > p {
+  font-size: 24px;
+}
+.htw-section div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background-color: #f6f6f6;
+  padding: 30px 0 30px 25px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #474646;
+  box-shadow: 0px 5px 20px 1px #cecece;
+}
+.htw-section div .number {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -36px;
+  background-color: #9356dc;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  color: #ffffff;
+  font-size: 14px;
+}
+.htw-section div i {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.restaurant-section {
+  padding: 30px 20px;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.restaurant-section h2 {
+  padding: 20px 0;
+  align-self: baseline;
+}
+.restaurant-section > div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  width: 100%;
+  position: relative;
+  box-shadow: 0px 5px 20px 1px #cecece;
+}
+.restaurant-section > div .new {
+  position: absolute;
+  left: 73%;
+  top: 5%;
+  background-color: #99e2d0;
+  color: #278870;
+  padding: 5px 25px;
+}
+.restaurant-section > div img {
+  width: 100%;
+  height: 180px;
+  border-radius: 15px 15px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.restaurant-section > div div {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+.restaurant-section > div div div {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 5px;
+  padding-left: 0;
+}
+.restaurant-section > div div div p {
+  color: #838282;
+}
+.restaurant-section > div div i {
+  font-size: 25px;
+  padding-top: 10px;
+  padding-right: 10px;
+  color: #9d9a9a;
+}
+
+.menu > div {
+  height: 300px;
+  background-size: contain;
+  margin-bottom: -95px;
+}
+.menu .background-note {
+  background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-size: cover;
+  background-position: right 35% bottom 10%;
+}
+.menu .background-gout {
+  background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+}
+.menu .background-francaise {
+  background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+}
+.menu .background-delice {
+  background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+}
+
+.menu-section {
+  background-color: #f6f6f6;
+  padding: 35px 15px;
+  border-radius: 40px;
+}
+.menu-section .name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-left: 5px;
+  font-size: 20px;
+}
+.menu-section .name h2 {
+  font-family: "Shrikhand", cursive;
+}
+.menu-section .courses {
+  margin-bottom: 50px;
+}
+.menu-section .courses h3 {
+  margin-left: 5px;
+  font-weight: 300;
+}
+.menu-section .courses .border {
+  border: 1.5px solid #99e2d0;
+  width: 50px;
+  margin: 2px 2px 20px 5px;
+}
+.menu-section .courses .dish {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 12px;
+  border-radius: 15px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  box-shadow: 0px 5px 20px 1px #cecece;
+}
+.menu-section .courses .dish > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.menu-section .courses .dish > div p {
+  font-weight: 400;
+  color: #696969;
+}
+.menu-section .courses .dish > div h4 {
+  font-size: 18px;
+  max-width: 250px;
+}
+.menu-section .courses .dish .price {
+  align-self: flex-end;
+}
+.menu-section .button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.menu-section .button-container button {
+  padding: 15px 60px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 0px 3px 4px 0px #cecece;
+  position: relative;
+}
+header img {
+  width: 60%;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: none;
+}
+.header-menu i {
+  position: absolute;
+  left: 5%;
+}
+
+footer {
+  background-color: #353535;
+  padding: 20px;
+  color: #ffffff;
+  font-size: 15px;
+}
+footer h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+footer > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer > div div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+footer > div div i {
+  width: 15px;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none !important;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  color: #ffffff;
+  border-radius: 50px;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  padding: 20px 30px;
+  font-weight: 600;
+  font-size: 18px;
+  border: 0;
+}

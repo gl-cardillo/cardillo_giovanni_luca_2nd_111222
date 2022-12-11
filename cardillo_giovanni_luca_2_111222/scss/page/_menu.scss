@@ -1,0 +1,96 @@
+.menu {
+  & > div {
+    height: 300px;
+    background-size: contain;
+    margin-bottom: -95px;
+  }
+
+  .background-note {
+    background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+    background-size: cover;
+    background-position: right 35% bottom 10%;
+  }
+
+  .background-gout {
+    background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  }
+  .background-francaise {
+    background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  }
+
+  .background-delice {
+    background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  }
+}
+
+.menu-section {
+  background-color: #f6f6f6;
+  padding: 35px 15px;
+  border-radius: 40px;
+
+  .name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: 5px;
+    font-size: 20px;
+
+    h2 {
+      font-family: $font-titles;
+    }
+  }
+
+  .courses {
+    margin-bottom: 50px;
+
+    h3 {
+      margin-left: 5px;
+      font-weight: 300;
+    }
+
+    .border {
+      border: 1.5px solid $colour-tertiary;
+      width: 50px;
+      margin: 2px 2px 20px 5px;
+    }
+    .dish {
+      display: flex;
+      justify-content: space-between;
+      background-color: #ffffff;
+      padding: 12px;
+      border-radius: 15px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      box-shadow: 0px 5px 20px 1px #cecece;
+
+      & > div {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        p {
+          font-weight: 400;
+          color: #696969;
+        }
+
+        h4 {
+          font-size: 18px;
+          max-width: 250px;
+        }
+      }
+      .price {
+        align-self: flex-end;
+      }
+    }
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    button {
+      padding: 15px 60px;
+    }
+  }
+}
