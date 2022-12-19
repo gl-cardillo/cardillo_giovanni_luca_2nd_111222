@@ -2,5 +2,7 @@ $colour-primary: #9356dc;
 $colour-secondary: #ff79da;
 $colour-tertiary: #99e2d0;
 
+$colour-mix-ps: linear-gradient($colour-secondary, $colour-primary); 
+
 $font-titles: "Shrikhand", cursive;
 $font-text: "Roboto", sans-serif;

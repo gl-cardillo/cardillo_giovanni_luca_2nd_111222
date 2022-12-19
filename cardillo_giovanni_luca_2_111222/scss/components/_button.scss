@@ -1,9 +1,10 @@
   button {
     color: #ffffff;
     border-radius: 50px;
-    background-image: linear-gradient(#ff79da, #9356dc);
-    padding: 20px 30px;
-    font-weight: 600;
+    background-image: $colour-mix-ps;
+    padding: 15px 25px;
+    font-weight: 400;
     font-size: 18px;
     border: 0;
+
   }

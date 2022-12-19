@@ -1,10 +1,20 @@
+@include tablet {
+  .info-section {
+    display: flex;
+  }
+}
+
 .location {
   display: flex;
   justify-content: center;
   gap: 15px;
   align-items: center;
   background-color: #eaeaea;
-  padding: 20px;
+  padding: 15px;
+
+  @include tablet {
+    box-shadow: 0px 4px 4px 0px #cecece;
+  }
 
   p {
     font-size: 18px;
@@ -14,19 +24,25 @@
 .explore-section {
   display: flex;
   align-items: center;
-  padding: 40px;
+  text-align: center;
+  padding: 40px 10px;
   flex-direction: column;
   gap: 30px;
   background-color: #f6f6f6;
 
-  h2 {
-    font-size: 28px;
-  }
+  @include tablet {
+    background-color: transparent;
+    justify-content: center;
+    width: 50%;
 
+    h2 {
+      font-size: 30px;
+    }
+  }
   p {
-    font-size: 20px;
+    font-size: 19px;
     text-align: center;
-    color: #5c5b5b;
+    color: #888888;
   }
 }
 
@@ -36,39 +52,70 @@
   gap: 20px;
   padding: 30px 20px;
 
-  & > p {
-    font-size: 24px;
-  }
-
-  div {
-    display: flex;
-    gap: 20px;
+  @include tablet {
+    width: 50%;
     align-items: center;
-    background-color: #f6f6f6;
-    padding: 30px 0 30px 25px;
-    border-radius: 20px;
-    font-size: 18px;
-    font-weight: 500;
-    color: #474646;
-    box-shadow: 0px 5px 20px 1px #cecece;
 
-    .number {
-      position: absolute;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-left: -36px;
-      background-color: $colour-primary;
-      width: 25px;
-      height: 25px;
-      border-radius: 100%;
-      color: #ffffff;
-      font-size: 14px;
+    h2 {
+      text-align: center;
+      font-size: 30px;
+    }
+  }
+  .htw-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include tablet {
     }
 
-    i {
-      margin-left: 20px;
-      font-size: 20px;
+    div {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      background-color: #f6f6f6;
+      padding: 25px 0 25px 25px;
+      border-radius: 20px;
+      font-weight: 500;
+      color: #474646;
+      box-shadow: 0px 5px 20px 1px #cecece;
+
+      @include tablet {
+        padding: 25px 35px 25px 15px;
+      }
+
+      .number {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -36px;
+        background-color: $colour-primary;
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+        color: #ffffff;
+        font-size: 14px;
+
+        @include tablet {
+          font-size: 18px;
+          width: 30px;
+          height: 30px;
+          background-image: $colour-mix-ps;
+        }
+      }
+
+      i {
+        font-size: 20px;
+        width: 30px;
+        text-align: center;
+      }
+
+      @include phone {
+        & > :last-child {
+          font-size: 18px;
+        }
+      }
     }
   }
 }
@@ -76,16 +123,30 @@
 .restaurant-section {
   padding: 30px 20px;
   background-color: #f6f6f6;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+  @include laptop {
+    & > div {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+
+  @include tablet {
+    padding: 30px 70px;
+    text-align: center;
+  }
 
   h2 {
     padding: 20px 0;
     align-self: baseline;
+
+    @include tablet {
+      font-size: 30px;
+    }
   }
 
-  & > div {
+  & > div > div {
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
@@ -95,6 +156,10 @@
     position: relative;
     box-shadow: 0px 5px 20px 1px #cecece;
 
+    @include laptop {
+      width: 45%;
+    }
+
     .new {
       position: absolute;
       left: 73%;
@@ -102,6 +167,12 @@
       background-color: $colour-tertiary;
       color: darken($colour-tertiary, 40%);
       padding: 5px 25px;
+
+      @include only-tablet {
+        left: 83%;
+        font-size: 18px;
+        padding: 7px 30px;
+      }
     }
 
     img {
