@@ -15,6 +15,10 @@ header {
     @include laptop {
       width: 40%;
     }
+
+    @include desktop {
+      width: 30%;
+    }
   }
 }
 
@@ -27,5 +31,10 @@ header {
   i {
     position: absolute;
     left: 5%;
+    font-size: 22px;
+
+    @include tablet {
+      font-size: 50px;
+    }
   }
 }

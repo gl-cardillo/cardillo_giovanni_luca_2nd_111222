@@ -1,18 +1,19 @@
 footer {
   background-color: #353535;
-  padding: 20px;    
+  padding: 15px;
   color: #ffffff;
   font-size: 15px;
-  display: flex;
-  align-items: center;
 
   @include tablet {
     padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   h1 {
     font-family: $font-titles;
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 20px;
 
     @include tablet {
@@ -20,7 +21,7 @@ footer {
     }
   }
 
-  &> div {
+  & > div {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -29,6 +30,11 @@ footer {
       flex-direction: row;
       align-items: center;
       gap: 30px;
+      justify-content: center;
+    }
+
+    @include desktop {
+      gap: 50px;
     }
 
     div {
@@ -39,8 +45,6 @@ footer {
       i {
         width: 15px;
       }
-
     }
   }
-
 }

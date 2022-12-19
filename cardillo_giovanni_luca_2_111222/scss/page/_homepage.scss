@@ -173,6 +173,13 @@
         font-size: 18px;
         padding: 7px 30px;
       }
+
+      @include desktop {
+        left: 83%;
+        font-size: 20px;
+        padding: 7px 30px;
+
+      }
     }
 
     img {
