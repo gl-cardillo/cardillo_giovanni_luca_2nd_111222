@@ -3,6 +3,7 @@ $colour-secondary: #ff79da;
 $colour-tertiary: #99e2d0;
 
 $colour-mix-ps: linear-gradient($colour-secondary, $colour-primary); 
+$colour-mix-ps-hover: linear-gradient(lighten($colour-secondary, 5%),lighten($colour-primary, 5%));
 
 $font-titles: "Shrikhand", cursive;
 $font-text: "Roboto", sans-serif;

@@ -162,11 +162,15 @@
 
     .new {
       position: absolute;
-      left: 73%;
+      left: 65%;
       top: 5%;
       background-color: $colour-tertiary;
       color: darken($colour-tertiary, 40%);
       padding: 5px 25px;
+
+      @include phone {
+        left: 73%;
+      }
 
       @include only-tablet {
         left: 83%;
@@ -178,7 +182,6 @@
         left: 83%;
         font-size: 20px;
         padding: 7px 30px;
-
       }
     }
 
@@ -209,7 +212,8 @@
       i {
         font-size: 25px;
         padding-top: 10px;
-        padding-right: 10px;
+        padding-right: 10px;    
+        cursor: pointer;
         color: #9d9a9a;
       }
     }
