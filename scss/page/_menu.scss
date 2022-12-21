@@ -88,6 +88,19 @@
       margin-bottom: 20px;
       box-shadow: 0px 5px 20px 1px #cecece;
 
+      &.first {
+        animation: gradually-appear-first linear 0.7s;
+      }
+      &.second {
+        animation: gradually-appear-second linear 0.9s;
+      }
+      &.third {
+        animation: gradually-appear-third linear 1.2s;
+      }
+      &.fourth {
+        animation: gradually-appear-fourth linear 1.6s;
+      }
+
       & > div {
         display: flex;
         flex-direction: column;
