@@ -55,10 +55,29 @@
   .name {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     margin-bottom: 30px;
     margin-left: 5px;
     font-size: 20px;
+
+    @include laptop {
+      justify-content: center;
+      gap: 50px;
+      font-size: 30px;
+
+      .fa-solid,
+      .fa-regular {
+        font-size: 30px;
+      }
+
+      .fa-solid {
+        bottom: 30px !important;
+      }
+    }
+
+    .fa-solid {
+      bottom: 24px;
+    }
 
     h2 {
       font-family: $font-titles;
@@ -81,8 +100,9 @@
     .dish {
       display: flex;
       justify-content: space-between;
+      position: relative;
       background-color: #ffffff;
-      padding: 12px;
+
       border-radius: 15px;
       font-weight: 600;
       margin-bottom: 20px;
@@ -101,10 +121,31 @@
         animation: gradually-appear-fourth linear 1.6s;
       }
 
+      .check-icon-container {
+        display: flex;
+        position: absolute;
+        width: 50px;
+        right: 0;
+        align-items: center;
+        justify-content: center;
+        background-color: $colour-tertiary;
+        top: 0;
+        bottom: 0;
+        border-radius: 0 10px 10px 0;
+        animation: add-animation linear 3s;
+        padding: 0;
+      }
+
+      i {
+        color: white;
+        animation: add-animation-icon linear 3s;
+      }
+
       & > div {
         display: flex;
         flex-direction: column;
         gap: 5px;
+        padding: 12px;
 
         p {
           font-weight: 400;
@@ -118,6 +159,7 @@
       }
       .price {
         align-self: flex-end;
+        padding: 12px;
       }
     }
 

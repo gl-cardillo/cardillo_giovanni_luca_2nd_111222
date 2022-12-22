@@ -130,6 +130,86 @@
     opacity: 1;
   }
 }
+@-webkit-keyframes heart-appear {
+  0% {
+    -webkit-text-fill-color: rgba(255, 0, 0, 0);
+  }
+  20% {
+    -webkit-text-fill-color: rgba(255, 0, 0, 0.2);
+  }
+  40% {
+    -webkit-text-fill-color: rgba(255, 0, 0, 0.4);
+  }
+  60% {
+    -webkit-text-fill-color: rgba(255, 0, 0, 0.6);
+  }
+  80% {
+    -webkit-text-fill-color: rgba(255, 0, 0, 0.8);
+  }
+  100% {
+    -webkit-text-fill-color: red;
+  }
+}
+@keyframes heart-appear {
+  0% {
+    -webkit-text-fill-color: rgba(255, 0, 0, 0);
+  }
+  20% {
+    -webkit-text-fill-color: rgba(255, 0, 0, 0.2);
+  }
+  40% {
+    -webkit-text-fill-color: rgba(255, 0, 0, 0.4);
+  }
+  60% {
+    -webkit-text-fill-color: rgba(255, 0, 0, 0.6);
+  }
+  80% {
+    -webkit-text-fill-color: rgba(255, 0, 0, 0.8);
+  }
+  100% {
+    -webkit-text-fill-color: red;
+  }
+}
+@-webkit-keyframes add-animation {
+  0% {
+    display: flex;
+    width: 0;
+  }
+  100% {
+    display: flex;
+    width: 50px;
+  }
+}
+@keyframes add-animation {
+  0% {
+    display: flex;
+    width: 0;
+  }
+  100% {
+    display: flex;
+    width: 50px;
+  }
+}
+@-webkit-keyframes add-animation-icon {
+  0% {
+    display: none;
+    width: 0;
+  }
+  100% {
+    display: block;
+    width: 50px;
+  }
+}
+@keyframes add-animation-icon {
+  0% {
+    display: none;
+    width: 0;
+  }
+  100% {
+    display: block;
+    width: 50px;
+  }
+}
 @media (min-width: 768px) {
   .info-section {
     display: flex;
@@ -354,13 +434,6 @@
 .restaurant-section > div > div div div p {
   color: #838282;
 }
-.restaurant-section > div > div div i {
-  font-size: 25px;
-  padding-top: 10px;
-  padding-right: 10px;
-  cursor: pointer;
-  color: #9d9a9a;
-}
 
 .menu > div {
   height: 300px;
@@ -423,10 +496,27 @@
 .menu-section .name {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   margin-bottom: 30px;
   margin-left: 5px;
   font-size: 20px;
+}
+@media (min-width: 1024px) {
+  .menu-section .name {
+    justify-content: center;
+    gap: 50px;
+    font-size: 30px;
+  }
+  .menu-section .name .fa-solid,
+.menu-section .name .fa-regular {
+    font-size: 30px;
+  }
+  .menu-section .name .fa-solid {
+    bottom: 30px !important;
+  }
+}
+.menu-section .name .fa-solid {
+  bottom: 24px;
 }
 .menu-section .name h2 {
   font-family: "Shrikhand", cursive;
@@ -446,8 +536,8 @@
 .menu-section .courses .dish {
   display: flex;
   justify-content: space-between;
+  position: relative;
   background-color: #ffffff;
-  padding: 12px;
   border-radius: 15px;
   font-weight: 600;
   margin-bottom: 20px;
@@ -469,10 +559,31 @@
   -webkit-animation: gradually-appear-fourth linear 1.6s;
           animation: gradually-appear-fourth linear 1.6s;
 }
+.menu-section .courses .dish .check-icon-container {
+  display: flex;
+  position: absolute;
+  width: 50px;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: #99e2d0;
+  top: 0;
+  bottom: 0;
+  border-radius: 0 10px 10px 0;
+  -webkit-animation: add-animation linear 3s;
+          animation: add-animation linear 3s;
+  padding: 0;
+}
+.menu-section .courses .dish i {
+  color: white;
+  -webkit-animation: add-animation-icon linear 3s;
+          animation: add-animation-icon linear 3s;
+}
 .menu-section .courses .dish > div {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  padding: 12px;
 }
 .menu-section .courses .dish > div p {
   font-weight: 400;
@@ -484,6 +595,7 @@
 }
 .menu-section .courses .dish .price {
   align-self: flex-end;
+  padding: 12px;
 }
 @media (min-width: 1024px) {
   .menu-section .courses .dishes {
@@ -639,4 +751,31 @@ button {
 button:hover {
   background-image: linear-gradient(#ff93e1, #a16be0);
   box-shadow: 0px 0px 20px 7px #cecece;
+}
+
+.heart-button {
+  bottom: 25px;
+  display: flex;
+  flex-flow: column;
+  font-size: 24px;
+  cursor: pointer;
+  height: 33px;
+  background-color: transparent;
+  border: none;
+}
+.heart-button .fa-solid {
+  position: relative;
+  bottom: 29px;
+  font-size: 24.4px;
+  color: transparent;
+}
+.heart-button .fa-solid:hover {
+  transform: scale(1);
+  -webkit-animation: heart-appear 200ms forwards;
+          animation: heart-appear 200ms forwards;
+}
+.heart-button .fa-solid:active {
+  transform: scale(1);
+  -webkit-animation: heart-appear 1000ms forwards;
+          animation: heart-appear 1000ms forwards;
 }

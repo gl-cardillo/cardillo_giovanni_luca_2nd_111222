@@ -19,7 +19,6 @@
   20% {
     transform: translateY(20px);
     opacity: 0;
-
   }
 
   100% {
@@ -36,7 +35,6 @@
   40% {
     transform: translateY(20px);
     opacity: 0;
-
   }
 
   100% {
@@ -53,7 +51,6 @@
   60% {
     transform: translateY(20px);
     opacity: 0;
-
   }
 
   100% {
@@ -71,11 +68,57 @@
   70% {
     transform: translateY(20px);
     opacity: 0;
-
   }
 
   100% {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+@keyframes heart-appear {
+  0% {
+    -webkit-text-fill-color: rgba(255, 0, 0, 0);
+  }
+  20% {
+    -webkit-text-fill-color: rgba(255, 0, 0, 0.2);
+  }
+  40% {
+    -webkit-text-fill-color: rgba(255, 0, 0, 0.4);
+  }
+  60% {
+    -webkit-text-fill-color: rgba(255, 0, 0, 0.6);
+  }
+  80% {
+    -webkit-text-fill-color: rgba(255, 0, 0, 0.8);
+  }
+
+  100% {
+    -webkit-text-fill-color: red;
+  }
+}
+
+
+@keyframes add-animation {
+  0% {
+    display: flex;
+    width: 0;
+  }
+
+  100% {
+    display: flex;
+    width: 50px;
+  }
+}
+
+@keyframes add-animation-icon {
+  0% {
+    display: none;
+    width: 0;
+  }
+
+  100% {
+    display: block;
+    width: 50px;
   }
 }

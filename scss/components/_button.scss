@@ -7,10 +7,38 @@ button {
   font-size: 18px;
   border: 0;
   cursor: pointer;
-  box-shadow: 0px 0px 20px 3px #cecece;;
+  box-shadow: 0px 0px 20px 3px #cecece;
 
   &:hover {
     background-image: $colour-mix-ps-hover;
     box-shadow: 0px 0px 20px 7px #cecece;
+  }
+}
+
+.heart-button {
+  bottom: 25px;
+  display: flex;
+  flex-flow: column;
+  font-size: 24px;
+  cursor: pointer;
+  height: 33px;
+  background-color: transparent;
+  border: none;
+
+  .fa-solid {
+    position: relative;
+    bottom: 29px;
+    font-size: 24.4px;
+    color: transparent;
+
+    &:hover {
+      transform: scale(1);
+      animation: heart-appear 200ms forwards;
+    }
+
+    &:active {
+      transform: scale(1);
+      animation: heart-appear 1000ms forwards;
+    }
   }
 }
