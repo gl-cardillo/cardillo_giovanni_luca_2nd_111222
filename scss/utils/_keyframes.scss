@@ -113,6 +113,27 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+  20% {
+    background-image: $colour-mix-ps-ligthen20;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  40% {
+    background-image: $colour-mix-ps-ligthen15;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  60% {
+    background-image: $colour-mix-ps-ligthen10;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  80% {
+    background-image: $colour-mix-ps-ligthen5;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
   100% {
     background-image: $colour-mix-ps;
     -webkit-background-clip: text;

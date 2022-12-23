@@ -2,8 +2,23 @@ $colour-primary: #9356dc;
 $colour-secondary: #ff79da;
 $colour-tertiary: #99e2d0;
 
-$colour-mix-ps: linear-gradient($colour-secondary, $colour-primary); 
-$colour-mix-ps-ligthen5: linear-gradient(lighten($colour-secondary, 5%),lighten($colour-primary, 5%));
+$colour-mix-ps: linear-gradient($colour-secondary, $colour-primary);
+$colour-mix-ps-ligthen5: linear-gradient(
+  lighten($colour-secondary, 5%),
+  lighten($colour-primary, 5%)
+);
+$colour-mix-ps-ligthen10: linear-gradient(
+  lighten($colour-secondary, 10%),
+  lighten($colour-primary, 10%)
+);
+$colour-mix-ps-ligthen15: linear-gradient(
+  lighten($colour-secondary, 15%),
+  lighten($colour-primary, 15%)
+);
+$colour-mix-ps-ligthen20: linear-gradient(
+  lighten($colour-secondary, 20%),
+  lighten($colour-primary, 20%)
+);
 
 
 $font-titles: "Shrikhand", cursive;

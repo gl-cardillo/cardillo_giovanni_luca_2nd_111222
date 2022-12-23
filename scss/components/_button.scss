@@ -1,7 +1,7 @@
 button {
   color: #ffffff;
   border-radius: 50px;
-  background-image: $colour-mix-ps-ligthen5;
+  background-image: $colour-mix-ps;
   padding: 15px 25px;
   font-weight: 400;
   font-size: 18px;
@@ -33,12 +33,12 @@ button {
 
     &:hover {
       transform: scale(1);
-      animation: heart-appear 200ms forwards;
+      animation: heart-appear 500ms forwards;
     }
 
     &:active {
       transform: scale(1);
-      animation: heart-appear 1000ms forwards;
+      animation: heart-appear 500ms forwards;
     }
   }
 }

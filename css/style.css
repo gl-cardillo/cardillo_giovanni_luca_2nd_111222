@@ -192,6 +192,26 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  20% {
+    background-image: linear-gradient(#ffdff6, #c9abee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  40% {
+    background-image: linear-gradient(#ffc6ef, #bc95e9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  60% {
+    background-image: linear-gradient(#fface8, #ae80e5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  80% {
+    background-image: linear-gradient(#ff93e1, #a16be0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
   100% {
     background-image: linear-gradient(#ff79da, #9356dc);
     -webkit-background-clip: text;
@@ -201,6 +221,26 @@
 @keyframes heart-appear {
   0% {
     background-image: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  20% {
+    background-image: linear-gradient(#ffdff6, #c9abee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  40% {
+    background-image: linear-gradient(#ffc6ef, #bc95e9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  60% {
+    background-image: linear-gradient(#fface8, #ae80e5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  80% {
+    background-image: linear-gradient(#ff93e1, #a16be0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -855,7 +895,7 @@ body {
 button {
   color: #ffffff;
   border-radius: 50px;
-  background-image: linear-gradient(#ff93e1, #a16be0);
+  background-image: linear-gradient(#ff79da, #9356dc);
   padding: 15px 25px;
   font-weight: 400;
   font-size: 18px;
@@ -886,11 +926,11 @@ button:hover {
 }
 .heart-button .fa-solid:hover {
   transform: scale(1);
-  -webkit-animation: heart-appear 200ms forwards;
-          animation: heart-appear 200ms forwards;
+  -webkit-animation: heart-appear 500ms forwards;
+          animation: heart-appear 500ms forwards;
 }
 .heart-button .fa-solid:active {
   transform: scale(1);
-  -webkit-animation: heart-appear 1000ms forwards;
-          animation: heart-appear 1000ms forwards;
+  -webkit-animation: heart-appear 500ms forwards;
+          animation: heart-appear 500ms forwards;
 }
