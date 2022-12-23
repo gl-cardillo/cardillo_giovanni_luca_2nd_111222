@@ -99,10 +99,10 @@
     }
     .dish {
       display: flex;
-      justify-content: space-between;
       position: relative;
       background-color: #ffffff;
-
+      overflow: hidden;
+      cursor: pointer;
       border-radius: 15px;
       font-weight: 600;
       margin-bottom: 20px;
@@ -123,29 +123,38 @@
 
       .check-icon-container {
         display: flex;
-        position: absolute;
-        width: 50px;
-        right: 0;
         align-items: center;
         justify-content: center;
         background-color: $colour-tertiary;
-        top: 0;
-        bottom: 0;
         border-radius: 0 10px 10px 0;
-        animation: add-animation linear 3s;
         padding: 0;
+        width: 0;
+
+        i {
+          color: white;
+          font-size: 26px;
+        }
       }
 
-      i {
-        color: white;
-        animation: add-animation-icon linear 3s;
+      &:hover > .check-icon-container {
+        animation: check-animation linear 300ms forwards;
+
+        i {
+          animation: check-animation-icon linear 300ms;
+        }
       }
 
       & > div {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        padding: 12px;
+        display: block;
+        padding: 12px 5px 12px 12px;
+        min-width: 0;
+
+        p,
+        h4 {
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+        }
 
         p {
           font-weight: 400;
@@ -159,7 +168,8 @@
       }
       .price {
         align-self: flex-end;
-        padding: 12px;
+        padding: 12px 12px 12px 5px;
+        margin-left: auto;
       }
     }
 
