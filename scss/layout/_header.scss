@@ -22,11 +22,24 @@ header {
   }
 }
 
-.header-menu {
+.header-menu > a {
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: none;
+
+
+
+  img {
+    width: 55%;
+  
+
+
+    @include tablet {
+      width: 80%;
+          padding: 10px;
+    }
+  }
 
   i {
     position: absolute;

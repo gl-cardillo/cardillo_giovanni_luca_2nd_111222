@@ -803,19 +803,28 @@ header img {
   }
 }
 
-.header-menu {
+.header-menu > a {
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: none;
 }
-.header-menu i {
+.header-menu > a img {
+  width: 55%;
+}
+@media (min-width: 768px) {
+  .header-menu > a img {
+    width: 80%;
+    padding: 10px;
+  }
+}
+.header-menu > a i {
   position: absolute;
   left: 5%;
   font-size: 22px;
 }
 @media (min-width: 768px) {
-  .header-menu i {
+  .header-menu > a i {
     font-size: 50px;
   }
 }
@@ -926,11 +935,11 @@ button:hover {
 }
 .heart-button .fa-solid:hover {
   transform: scale(1);
-  -webkit-animation: heart-appear 500ms forwards;
-          animation: heart-appear 500ms forwards;
+  -webkit-animation: heart-appear 300ms forwards;
+          animation: heart-appear 300ms forwards;
 }
 .heart-button .fa-solid:active {
   transform: scale(1);
-  -webkit-animation: heart-appear 500ms forwards;
-          animation: heart-appear 500ms forwards;
+  -webkit-animation: heart-appear 300ms forwards;
+          animation: heart-appear 300ms forwards;
 }

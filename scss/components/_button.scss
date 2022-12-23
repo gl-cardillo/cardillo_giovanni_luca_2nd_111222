@@ -33,12 +33,12 @@ button {
 
     &:hover {
       transform: scale(1);
-      animation: heart-appear 500ms forwards;
+      animation: heart-appear 300ms forwards;
     }
 
     &:active {
       transform: scale(1);
-      animation: heart-appear 500ms forwards;
+      animation: heart-appear 300ms forwards;
     }
   }
 }
