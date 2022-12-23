@@ -9,10 +9,29 @@
   height: 100%;
   animation: black-screen linear 2.5s;
   background-color: transparent;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
+  bottom: 0;
   z-index: -1;
+
+  p {
+    margin-top: 60px;
+    font-weight: bold;
+    font-size: 18px;
+    background: $colour-mix-ps;
+    background: transparent;
+    color: transparent;
+    animation: loading-text linear 2.5s;
+  }
+
+  p,
+  .bar-container {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
 }
 .bar-container {
   top: 50%;

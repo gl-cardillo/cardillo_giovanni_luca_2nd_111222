@@ -10,10 +10,26 @@
   }
 }
 
+@keyframes loading-text {
+  0% {
+    background: $colour-mix-ps;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
+  }
+
+  100% {
+    background: $colour-mix-ps;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
+  }
+}
+
 @keyframes loader {
   0% {
     transform: scaleY(0.1);
-    background: transparent ;
+    background: transparent;
   }
   50% {
     transform: scaleY(1);
@@ -94,9 +110,13 @@
 @keyframes heart-appear {
   0% {
     background-image: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   100% {
     background-image: $colour-mix-ps;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 
