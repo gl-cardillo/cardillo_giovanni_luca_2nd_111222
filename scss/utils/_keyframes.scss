@@ -143,13 +143,12 @@
 
 @keyframes check-animation {
   0% {
-    display: flex;
     width: 0;
+
   }
 
   100% {
-    display: flex;
-    width: 60px;
+    min-width: 50px;
   }
 }
 

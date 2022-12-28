@@ -145,8 +145,8 @@
       }
 
       & > div {
-        display: block;
-        padding: 12px 5px 12px 12px;
+        display: inline;
+        padding: 12px 10px 12px 12px;
         min-width: 0;
 
         p,
@@ -168,7 +168,7 @@
       }
       .price {
         align-self: flex-end;
-        padding: 12px 12px 12px 5px;
+        padding: 12px 20px 12px 5px;
         margin-left: auto;
       }
     }

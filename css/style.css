@@ -252,22 +252,18 @@
 }
 @-webkit-keyframes check-animation {
   0% {
-    display: flex;
     width: 0;
   }
   100% {
-    display: flex;
-    width: 60px;
+    min-width: 50px;
   }
 }
 @keyframes check-animation {
   0% {
-    display: flex;
     width: 0;
   }
   100% {
-    display: flex;
-    width: 60px;
+    min-width: 50px;
   }
 }
 @-webkit-keyframes check-animation-icon {
@@ -729,8 +725,8 @@
           animation: check-animation-icon linear 300ms;
 }
 .menu-section .courses .dish > div {
-  display: block;
-  padding: 12px 5px 12px 12px;
+  display: inline;
+  padding: 12px 10px 12px 12px;
   min-width: 0;
 }
 .menu-section .courses .dish > div p,
@@ -749,7 +745,7 @@
 }
 .menu-section .courses .dish .price {
   align-self: flex-end;
-  padding: 12px 12px 12px 5px;
+  padding: 12px 20px 12px 5px;
   margin-left: auto;
 }
 @media (min-width: 1024px) {
