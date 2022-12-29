@@ -224,7 +224,6 @@
 }
 @-webkit-keyframes heart-appear {
   0% {
-    background-image: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -261,7 +260,6 @@
 }
 @keyframes heart-appear {
   0% {
-    background-image: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
